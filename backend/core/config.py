@@ -5,7 +5,7 @@ class Settings(BaseSettings):
     API_PREFIX: str = "/api"
     DEBUG: bool = False
     ALLOWED_ORIGINS: str = ""
-    DATABASE_URL: str = "sqlite:///./database.db"
+    DATABASE_URL: str = "postgresql://user:password@host/dbname"
     GROQ_API_KEY: str = ""
     GROQ_MODEL: str = "llama-3.1-8b-instant"
 
